@@ -1,3 +1,5 @@
+# conda create -n DSPP python=3.11
+
 pandas
 matplotlib
 numpy

@@ -178,9 +178,9 @@ def NegLogposterior(val):
     return -(loglikelihood+prior)
 
 
- minimize(NegLogposterior,6)
+minimize(NegLogposterior,6)
 
- RandValu = np.linspace(5,15,1000) 
+RandValu = np.linspace(5,15,1000) 
 #The majority of data sentence lengths, or the average of data sentence lengths, are between 5 and 30 words..
 
 listE = [] # Eempty list of y coordinates

@@ -1,3 +1,22 @@
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score,classification_report,confusion_matrix,roc_curve
+import statsmodels.api 
+from statsmodels.api import Poisson
+import scipy.stats
+from scipy.optimize import minimize
+from scipy.stats import poisson
+from scipy.stats import gamma
+import warnings
+warnings.filterwarnings('ignore')
+
 traindata=pd.read_csv("ATLAS-data.csv")
 testdata=pd.read_csv("ATLAS-labels.csv")
 
